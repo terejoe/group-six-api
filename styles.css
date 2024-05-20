@@ -3,38 +3,59 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 html{
   font-size: 62.5%;
 }
+
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
   background-color: lightblue;
 }
+
 header{
-  min-height: 12vh;
-}
-nav ul{
-  position: absolute;
-  top: 3rem;
+  /* min-height: 12vh; */
   display: flex;
-  padding-left: 50rem;
-  gap: 10rem;
+  /* border: 3px solid green; */
+  justify-content: space-between; 
+  padding: 2em 3em;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul{
+  display: flex;
+  justify-content: center;
+  margin-left: 10rem;
+  gap: 5rem;
   font-size: 2rem;
   list-style-type: none;
 }
+
 nav ul li a{
   text-decoration: none;
+  background-color: #0e4af1;
+  padding: 0.5em 1em;
+  border-radius: 50px;
+  color: #ffffff;
 }
+
 nav ul li a:hover{
-  text-decoration: underline;
-  color: white;
+  color: #0e4af1;
+  background-color: #fff;
 }
+
 img{
-  position: absolute;
-  left: 15rem;
+  /* position: absolute; */
+  /* left: 15rem; */
   width: 4vw;
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
 }
+
 .section1{
   min-height: 100vh;
   background-image: url(images/pexels-pixabay-159652.jpg);
@@ -42,8 +63,9 @@ img{
   background-size: cover;
   background-attachment: fixed;
   background-position: 100%;
-  border-bottom: 1px solid blue;
+  border-bottom: 1px solid #0e4af1;
 }
+
 .word1{
   font-size: 3rem;
   text-align: center;
@@ -51,21 +73,25 @@ img{
   line-height: 2;
   color: white;
 }
+
 .section2{
   margin-top: 10rem;
 }
+
 h1{
   font-size: 4rem;
   color: blue;
   padding-left: 15rem;
   padding-bottom: 5rem;
 }
+
 .news-container {
   display: flex;
   flex-wrap: wrap;
   padding-left: 12rem;
   font-size: 1.5rem;
 }
+
 .news-article {
   border: 1px solid blue;
   border-radius: 8px;
@@ -76,6 +102,7 @@ h1{
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   overflow: auto;
 }
+
 .news-article img {
   max-width: 100%;
   border-radius: 8px;
